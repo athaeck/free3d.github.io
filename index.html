@@ -197,7 +197,7 @@
                                         playsinline
                                         height="100%"
                                     >
-                                        <source src="" type="video/mp4">
+                                        <source src="./static/videos/000.mp4" type="video/mp4">
                                     </video>
                                 </div>
                                 <div class="item item-chair-tp">
@@ -211,7 +211,7 @@
                                         playsinline
                                         height="100%"
                                     >
-                                        <source src="" type="video/mp4">
+                                        <source src="./static/videos/001.mp4" type="video/mp4">
                                     </video>
                                 </div>
                                 <div class="item item-shiba">
@@ -225,7 +225,7 @@
                                         playsinline
                                         height="100%"
                                     >
-                                        <source src="" type="video/mp4">
+                                        <source src="./static/videos/002.mp4" type="video/mp4">
                                     </video>
                                 </div>
                                 <div class="item item-fullbody">
@@ -239,7 +239,7 @@
                                         playsinline
                                         height="100%"
                                     >
-                                        <source src="" type="video/mp4">
+                                        <source src="./static/videos/003.mp4" type="video/mp4">
                                     </video>
                                 </div>
                                 <div class="item item-blueshirt">
@@ -253,7 +253,7 @@
                                         playsinline
                                         height="100%"
                                     >
-                                        <source src="" type="video/mp4">
+                                        <source src="./static/videos/004.mp4" type="video/mp4">
                                     </video>
                                 </div>
                                 <div class="item item-mask">
@@ -267,35 +267,7 @@
                                         playsinline
                                         height="100%"
                                     >
-                                        <source src="" type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="item item-coffee">
-                                    <video
-                                        poster=""
-                                        id=""
-                                        autoplay
-                                        controls
-                                        muted
-                                        loop
-                                        playsinline
-                                        height="100%"
-                                    >
-                                        <source src="" type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="item item-toby">
-                                    <video
-                                        poster=""
-                                        id=""
-                                        autoplay
-                                        controls
-                                        muted
-                                        loop
-                                        playsinline
-                                        height="100%"
-                                    >
-                                        <source src="" type="video/mp4">
+                                        <source src="./static/videos/005.mp4" type="video/mp4">
                                     </video>
                                 </div>
                             </div>
@@ -309,6 +281,7 @@
                             <div class="column is-four-fifths">
                                 <h2 class="title is-3">Abstract</h2>
                                 <div class="content has-text-justified">
+                                    <p>We present a method of how we can create good 3D videos with a smaller setup than a large dome with many cameras and also use them in static images of realities.</p>
                                     <!-- <p>
                                         We present the first method capable of photorealistically reconstructing a non-rigidly deforming scene using photos/videos captured casually from mobile phones.
                                     </p>
@@ -324,7 +297,8 @@
                                         <i>"nerfies"</i>
                                         . We evaluate our method by collecting data using a rig with two mobile phones that take time-synchronized photos, yielding train/validation images of the same pose at different viewpoints. We show that our
                             method faithfully reconstructs non-rigidly deforming scenes and reproduces unseen views with high fidelity.
-                                    </p> --></div>
+                                    </p> -->
+                                </div>
                             </div>
                         </div>
                         <!--/ Abstract. -->
@@ -385,7 +359,7 @@
                                             playsinline
                                             height="100%"
                                         >
-                                            <source src="./static/videos/matting.mp4" type="video/mp4">
+                                            <source src="" type="video/mp4">
                                         </video>
                                     </div>
                                 </div>
@@ -447,7 +421,7 @@
                                         playsinline
                                         width="75%"
                                     >
-                                        <source src="./static/videos/replay.mp4" type="video/mp4">
+                                        <source src="" type="video/mp4">
                                     </video>
                                 </div>
                                 <!--/ Re-rendering. -->
@@ -460,31 +434,21 @@
                                 <h2 class="title is-3">Related Links</h2>
                                 <div class="content has-text-justified">
                                     <p>
-                                        There's a lot of excellent work that was introduced around the same time as ours.
+                                        There's a lot of excellent work that was inspiring us:
                                     </p>
                                     <p>
-                                        <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a>
-                                        introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
+                                        <a href="http://arxiv.org/abs/2003.08934">NeRF</a>
+                                        provided revolutionary results on novel view synthesis.
                                     </p>
                                     <p>
-                                        <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a>
+                                        <a href="http://arxiv.org/abs/2310.08585">Im4D</a>
                                         and
-                                        <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-                                        both use deformation fields to model non-rigid scenes.
+                                        <a href="http://arxiv.org/abs/2310.11448">4k4D</a>
+                                        provides the creation of 3D-videos through dynamic NeRFs.
                                     </p>
                                     <p>
-                                        Some works model videos with a NeRF by directly modulating the density, such as
-                                        <a href="https://video-nerf.github.io/">Video-NeRF</a>
-                                        ,
-                                        <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>
-                                        , and
-                                        <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-                                    </p>
-                                    <p>
-                                        There are probably many more by the time you are reading this. Check out
-                                        <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>
-                                        , and
-                                        <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>
+                                        Some work, that created 3D-videos through dynamic gaussian spaltting:
+                                        <a href="http://arxiv.org/abs/2308.09713"> Dynamic 3D Gaussians</a>
                                         .
                                     </p>
                                 </div>
@@ -498,11 +462,11 @@
                         <h2 class="title">BibTeX</h2>
                         <pre>
                             <code>
-                                @article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+                                @article{brunn2024free3d,
+    author    = {Brunn, Felix and Christmeier, Jan and Häcker, Nick Philipp and Stempfle, Laura Christin and Willmanm, Lukas and Zakowski, Simon and Hahne, Prof. Dr. Uwe},
+    title     = {Free3D - Free-viewpoint 3D video creation},
+    journal   = {ICCV},
+    year      = {2024},
 }
                             </code>
                         </pre>

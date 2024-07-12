@@ -4,12 +4,11 @@ This is the repository that contains source code for the [Nerfies website](https
 
 If you find Nerfies useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
+@article{brunn2024free3d,
+  author    = {Brunn, Felix and Christmeier, Jan and Häcker, Nick Philipp and Stempfle, Laura Christin and Willmanm, Lukas and Zakowski, Simon and Hahne, Prof. Dr. Uwe},
+  title     = {Free3D - Free-viewpoint 3D video creation},
   journal   = {ICCV},
-  year      = {2021},
-}
+  year      = {2024},
 ```
 
 # Website License

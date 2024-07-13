@@ -6,7 +6,11 @@ This is the repository that contains source code for the [Free3D website](https:
 
 This READNME contains links to our repositories as well:
 
+- Our calibration tool: [Calibrator](https://github.com/HFU-DM-free3D/calibrating)
+- Our over the network synchroniced recording and calibrating middleware: [Middleware](https://github.com/HFU-DM-free3D/RecorderOperator)
+- Our pointcloud and gaussian splat visualizer in Unity: [Gaussian splat visualizer in Unity](https://github.com/HFU-DM-free3D/UnityGaussianSplatting)
 
+# BibTex
 
 If you find Free3D useful for your work please cite:
 ```

@@ -4,7 +4,7 @@ This is the repository that contains source code for the [Free3D website](https:
 
 # Free3D repositoriies:
 
-This READNME contains links to our repositories as well:
+This README contains links to our repositories as well:
 
 - Our calibration tool: [Calibrator](https://github.com/HFU-DM-free3D/calibrating)
 - Our over the network synchroniced recording and calibrating middleware: [Middleware](https://github.com/HFU-DM-free3D/RecorderOperator)
@@ -17,7 +17,6 @@ If you find Free3D useful for your work please cite:
 @article{brunn2024free3d,
   author    = {Brunn, Felix and Christmeier, Jan and Häcker, Nick Philipp and Stempfle, Laura Christin and Willmanm, Lukas and Zakowski, Simon and Hahne, Prof. Dr. Uwe},
   title     = {Free3D - Free-viewpoint 3D video creation},
-  journal   = {ICCV},
   year      = {2024},
 ```
 

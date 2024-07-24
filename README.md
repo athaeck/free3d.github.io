@@ -8,7 +8,7 @@ This README contains links to our repositories as well:
 
 - Our calibration tool: [Calibrator](https://github.com/HFU-DM-free3D/calibrating)
 - Our recording and calibrating middleware synchronised via a network: [Middleware](https://github.com/HFU-DM-free3D/RecorderOperator)
-- Our pointcloud and gaussian splat visualizer in Unity: [Gaussian splat visualizer in Unity](https://github.com/HFU-DM-free3D/UnityGaussianSplatting)
+- Our pointcloud and gaussian splat visualiser in Unity: [Gaussian splat visualizer in Unity](https://github.com/HFU-DM-free3D/UnityGaussianSplatting)
 
 # BibTex
 

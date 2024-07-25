@@ -337,20 +337,25 @@
                             </div>
                         </div>
                     </div>
-                    <h2 class="title is-3">Calibrating</h2>
+                    <h2 class="title is-3">Marker Based Calibrating</h2>
 
                     <div class="columns is-centered">
 
                         <div class="column">
                             <div class="content">
                                 <!-- TODO: Arucu kalibierung einpflegen -->
-                                <h3 class=" is-3">Hier könnte deine Arucu Überschrift stehen</h3>
+                                <h3 class=" is-3">ArUco Marker</h3>
                                 <p>
-                                    Hier könnte deine Beschreibung stehen
+                                    An ArUco marker cube (17 cm edge length) with unique IDs on each side is used to 
+                                    calculate the cube's center from the tracked markers in the camera images.
+                                    The cube's center is then set as the scene center for determining camera positions and orientations. 
+                                    Due to marker size and lighting, tracking inaccuracies may occur. 
+                                    Over a ten-second recording at 30 frames per second, 300 orientation matrix and position vector results per marker ID are generated. 
+                                    An algorithm compares pairs of detected marker positions, with the median of these comparisons determining the camera position relative to the cube.
                                 </p>
                                 <div class="">
-                                    <img src="./static/images/Image_Placeholder.png"
-                                        alt="Hier könnte dein alt Text stehen" title="Hier könnte dein titel stehen">
+                                    <img src="./static/images/TrackedMarkers.png"
+                                        alt="ArUco Marker" title="ArUco Marker">
                                 </div>
                             </div>
                         </div>
@@ -358,13 +363,16 @@
                         <div class="column">
                             <div class="content">
                                 <!-- TODO: Charucu Kalibrierung einpflegen -->
-                                <h3 class=" is-3">Hier könnte deine Charucu Überschrift stehen</h3>
+                                <h3 class=" is-3">ChArUco-Board</h3>
                                 <p>
-                                    Hier könnte deine Beschreibung stehen
+                                    A ChArUco board was also created, printed on an A4 poster. 
+                                    The ArUco markers are 11.2 cm x 11.2 cm, and the chessboard squares are 15 cm x 15 cm. 
+                                    In a ten-second calibration video at 30 frames per second, 300 orientation matrices and position vectors are generated. 
+                                    OpenCV outputs a single position, and the median of these results is used to determine the poster's position, which in turn is used to determine the camera position.
                                 </p>
                                 <div class="">
-                                    <img src="./static/images/Image_Placeholder.png"
-                                        alt="Hier könnte dein alt Text stehen" title="Hier könnte dein titel stehen">
+                                    <img src="./static/images/TrackedMarkers_Charuco.png"
+                                        alt="ChArUco Board" title="ChArUco Board">
                                 </div>
                             </div>
                         </div>
@@ -376,13 +384,18 @@
                         <div class="column">
                             <div class="content">
                                 <!-- TODO: Post-Processing einpflegen -->
-                                <h3 class=" is-3">Hier könnte deine Typ 1 Post-Process stehen</h3>
+                                <h3 class=" is-3">From whole room to extracted center</h3>
                                 <p>
-                                    Hier könnte deine Beschreibung stehen
+                                    RGB-D data from MKV files are processed with calibration data to form the point cloud. 
+                                    Open3D functions extract the central object or person and DB-Scan selects the largest cluster, typically the desired object. 
+                                    The ground is removed with a surface selection function. 
+                                    These steps isolate the object in the scene, though errors may occur depending on the scene.                                
                                 </p>
                                 <div class="">
-                                    <img src="./static/images/Image_Placeholder.png"
-                                        alt="Hier könnte dein alt Text stehen" title="Hier könnte dein titel stehen">
+                                    <img src="./static/images/Pointcloud_Kinects.png"
+                                        alt="PointCloud" title="PointCloud">
+                                    <img src="./static/images/ExtractetObjectInCenter.png"
+                                        alt="ExtractetObjectInCenter" title="ExtractetObjectInCenter">
                                 </div>
                             </div>
                         </div>
@@ -390,13 +403,15 @@
                         <div class="column">
                             <div class="content">
                                 <!-- TODO: Post-Processing einpflegen -->
-                                <h3 class=" is-3">Hier könnte deine Typ 2 Psot-Process stehen</h3>
+                                <h3 class=" is-3"> Combining point clouds and Gaussian Splats</h3>
                                 <p>
-                                    Hier könnte deine Beschreibung stehen
+                                    To visualize the point clouds, we used Unity with a Gaussian Splat integration to display PLY files. 
+                                    We developed a custom plugin to animate and display point clouds in Unity. 
+                                    The picture below shows the successful combination, featuring the typical appearance of a Gaussian Splat with our point cloud in the center.
                                 </p>
                                 <div class="">
-                                    <img src="./static/images/Image_Placeholder.png"
-                                        alt="Hier könnte dein alt Text stehen" title="Hier könnte dein titel stehen">
+                                    <img src="./static/images/GS_Unity.png"
+                                        alt="Unity" title="Unity">
                                 </div>
                             </div>
                         </div>

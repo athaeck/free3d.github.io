@@ -73,6 +73,7 @@
                                 <!-- <sup>2</sup> -->
                                 ,
                             </span>
+                            <!-- TODO: Jan verknüpfen -->
                             <span class="author-block">
                                 <a href="">Jan Christmeier</a>
                                 <!-- <sup>2</sup> -->
@@ -112,6 +113,7 @@
                         <div class="column has-text-centered">
                             <div class="publication-links">
                                 <!-- PDF Link. -->
+                                <!-- TODO: Link zum Repo vom Paper hinzufügen also da wo mans PDF sehen kann -->
                                 <span class="link-block">
                                     <a href="" class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
@@ -120,23 +122,23 @@
                                         <span>Paper</span>
                                     </a>
                                 </span>
-                                <span class="link-block">
+                                <!-- <span class="link-block">
                                     <a href="" class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="ai ai-arxiv"></i>
                                         </span>
                                         <span>arXiv</span>
                                     </a>
-                                </span>
+                                </span> -->
                                 <!-- Video Link. -->
-                                <span class="link-block">
+                                <!-- <span class="link-block">
                                     <a href="" class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fab fa-youtube"></i>
                                         </span>
                                         <span>Video</span>
                                     </a>
-                                </span>
+                                </span> -->
                                 <!-- Code Link. -->
                                 <span class="link-block">
                                     <a href="https://github.com/HFU-DM-free3D/free3d.github.io"
@@ -148,6 +150,7 @@
                                     </a>
                                 </span>
                                 <!-- Dataset Link. -->
+                                <!-- TODO: Link zum Datenset hinzufügen -->
                                 <span class="link-block">
                                     <a href="" class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
@@ -165,8 +168,9 @@
     <section class="hero teaser">
         <div class="container is-max-desktop">
             <div class="hero-body">
+                <!-- TODO: Teaser Video einbauen -->
                 <video id="teaser" autoplay muted loop playsinline height="100%">
-                    <source src="" type="video/mp4">
+                    <source src="./static/videos/placeholder.mp4" type="video/mp4">
                 </video>
                 <h2 class="subtitle has-text-centered">
                     <span class="dnerf">Free3D</span> creates 3D-videos out of 3 Kinect cameras.
@@ -250,98 +254,156 @@
     </section>
     <section class="section">
         <div class="container is-max-desktop">
-            <!-- <div class="columns is-centered">
 
-                <div class="column">
-                    <div class="content">
-                        <h2 class="title is-3">Visual Effects</h2>
-                        <p>
-                            Using
-                            <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect would be impossible
-                            without nerfies since it would require going through a wall.
-                        </p>
-                        <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-                            <source src="" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-
-                <div class="column">
-                    <h2 class="title is-3">Matting</h2>
-                    <div class="columns is-centered">
-                        <div class="column content">
-                            <p>
-                                As a byproduct of our method, we can also solve the matting problem by ignoring samples
-                                that fall outside of a bounding box during rendering.
-                            </p>
-                            <video id="matting-video" controls playsinline height="100%">
-                                <source src="" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!--/ Matting. -->
-            <!-- Animation. -->
             <div class="columns is-centered">
                 <div class="column is-full-width">
                     <h2 class="title is-3">Infrastructure</h2>
 
-                    <h3 class="title is-4">Basic overview</h3>
-                    <div class="content has-text-justified">
-                        <div class="columns is-centered"> <img src="./static/images/Hierachy.png"
-                                alt="Infrastructure of centralised recording and calibrating"
-                                title="Infrastructure of centralised recording and calibrating"></div>
 
-                        <p>
-                            In order to reproduce our results, it is important to use 3 Azure Kinect cameras. Each of
-                            these cameras is connected to a laptop or PC as shown in the container ‘For each kinect’.
-                            The recorder will run on this device, which will connect to the websocket
-                            server and needs access to a central file system so that the recorded video can be saved on
-                            it.
-                        </p>
-                        <p>The websocket server, Calibrator and the Operator Client are executed on another laptop or
-                            PC. This device also provides the central file system. If all recorders and the calibrator
-                            are connected, both the recordings and the calibration
-                            can be started centrally via the Operator Client.</p>
-                    </div>
+                    <h3 class="title is-4">Hardware setup</h3>
 
-                    <h3 class="title is-4">Physical setup</h3>
-                    <div class="columns is-centered has-text-centered">
-                        <div class="column is-four-fifths">
-                            <div class="content has-text-justified">
+
+                    <div class="columns is-centered">
+
+                        <div class="column">
+                            <div class="content">
+                                <h4 class=" is-3">Time lapse setup</h4>
                                 <p>
-                                    It takes approximately seven minutes for two people to set up the hardware, which consists of three Azure Kinect cameras on tripods connected to each other and a laptop each via cables.
+                                    It takes approximately seven minutes for two people to set up the hardware, which
+                                    consists of three Azure Kinect cameras on tripods connected to each other and a
+                                    laptop each via cables.
                                 </p>
+                                <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+                                    <source src="./static/videos/Zeitraffer_cut.mp4" type="video/mp4">
+                                </video>
                             </div>
-                            <div class="publication-video">
-                                <iframe src="./static/videos/Zeitraffer_cut.mp4" frameborder="0"
-                                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="column">
+                            <div class="content">
+                                <!-- TODO: Kinect Setup von Notion einpfelgen -->
+                                <h4 class=" is-3">Kinect setup</h4>
+                                <p>
+                                    Hier könnte deine Notion Beschreibung stehen
+                                </p>
+                                <div class="">
+                                    <img src="./static/images/Image_Placeholder.png"
+                                        alt="Hier könnte dein alt Text stehen" title="Hier könnte dein titel stehen">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="columns is-vcentered interpolation-panel">
-                        <div class="column is-3 has-text-centered">
-                            <img src="./static/images/interpolate_start.jpg" class="interpolation-image"
-                                alt="Interpolate start reference image.">
-                            <p>Start Frame</p>
-                        </div>
-                        <div class="column interpolation-video-column">
-                            <div id="interpolation-image-wrapper">
-                                Loading...
+
+                    <h3 class="title is-4">Software setup</h3>
+
+                    <div class="columns is-centered">
+                        <div class="column">
+                            <div class="content">
+                                <h4 class=" is-3">Network infrastructur</h4>
+                                <p>
+                                    Our small setup was implemented without any kind of DHCP server. We had only four IP
+                                    addresses to use, so we assigned them manually to the PCs. The PC with the IP
+                                    address 192.168.10.1 uses the Windows Network Share feature to share a specific
+                                    folder across
+                                    the entire network. This allows all other clients to save their Kinect videos in
+                                    that folder, ensuring that all video files are stored centrally. That folder has to
+                                    be added as a network folder to all other clients,
+                                    so its folder path can be used in the code as the path for the recordings of the
+                                    Kinect cameras.
+                                </p>
+                                <div class="">
+                                    <img src="./static/images/physical-infrastructure.png" alt="Physical-Infrastructure"
+                                        title="Physical-Infrastructure">
+                                </div>
                             </div>
-                            <input class="slider is-fullwidth is-large is-info" id="interpolation-slider" step="1"
-                                min="0" max="100" value="0" type="range">
                         </div>
-                        <div class="column is-3 has-text-centered">
-                            <img src="./static/images/interpolate_end.jpg" class="interpolation-image"
-                                alt="Interpolation end reference image.">
-                            <p class="is-bold">End Frame</p>
+                        <div class="column">
+                            <div class="content">
+                                <h4 class=" is-3">Basic overview</h4>
+                                <p>
+                                    In order to reproduce our results, it is important to use 3 Azure Kinect cameras.
+                                    Each of these cameras is connected to a laptop or PC as shown in the container ‘For
+                                    each kinect’. The recorder will run on this device, which will connect to the
+                                    websocket
+                                    server and needs access to a central file system so that the recorded video can be
+                                    saved on it. The websocket server, Calibrator and the Operator Client are executed
+                                    on another laptop or PC. This device also provides
+                                    the central file system. If all recorders and the calibrator are connected, both the
+                                    recordings and the calibration can be started centrally via the Operator Client.
+                                </p>
+                                <div class="">
+                                    <img src="./static/images/Hierachy.png" alt="Infrastructure" title="Infrastructure">
+                                </div>
+                            </div>
                         </div>
-                    </div> -->
+                    </div>
+                    <h2 class="title is-3">Calibrating</h2>
+
+                    <div class="columns is-centered">
+
+                        <div class="column">
+                            <div class="content">
+                                <!-- TODO: Arucu kalibierung einpflegen -->
+                                <h3 class=" is-3">Hier könnte deine Arucu Überschrift stehen</h3>
+                                <p>
+                                    Hier könnte deine Beschreibung stehen
+                                </p>
+                                <div class="">
+                                    <img src="./static/images/Image_Placeholder.png"
+                                        alt="Hier könnte dein alt Text stehen" title="Hier könnte dein titel stehen">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="content">
+                                <!-- TODO: Charucu Kalibrierung einpflegen -->
+                                <h3 class=" is-3">Hier könnte deine Charucu Überschrift stehen</h3>
+                                <p>
+                                    Hier könnte deine Beschreibung stehen
+                                </p>
+                                <div class="">
+                                    <img src="./static/images/Image_Placeholder.png"
+                                        alt="Hier könnte dein alt Text stehen" title="Hier könnte dein titel stehen">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="title is-3">Post-Processing</h2>
+
+                    <div class="columns is-centered">
+
+                        <div class="column">
+                            <div class="content">
+                                <!-- TODO: Post-Processing einpflegen -->
+                                <h3 class=" is-3">Hier könnte deine Typ 1 Post-Process stehen</h3>
+                                <p>
+                                    Hier könnte deine Beschreibung stehen
+                                </p>
+                                <div class="">
+                                    <img src="./static/images/Image_Placeholder.png"
+                                        alt="Hier könnte dein alt Text stehen" title="Hier könnte dein titel stehen">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="content">
+                                <!-- TODO: Post-Processing einpflegen -->
+                                <h3 class=" is-3">Hier könnte deine Typ 2 Psot-Process stehen</h3>
+                                <p>
+                                    Hier könnte deine Beschreibung stehen
+                                </p>
+                                <div class="">
+                                    <img src="./static/images/Image_Placeholder.png"
+                                        alt="Hier könnte dein alt Text stehen" title="Hier könnte dein titel stehen">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!--/ Animation. -->
+
             <!-- Concurrent Work. -->
             <div class="columns is-centered">
                 <div class="column is-full-width">

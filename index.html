@@ -152,7 +152,8 @@
                                 <!-- Dataset Link. -->
                                 <!-- TODO: Link zum Datenset hinzufügen -->
                                 <span class="link-block">
-                                    <a href="https://bwsyncandshare.kit.edu/s/etCYZpMDzjfYgza" class="external-link button is-normal is-rounded is-dark">
+                                    <a href="https://bwsyncandshare.kit.edu/s/etCYZpMDzjfYgza"
+                                        class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="far fa-images"></i>
                                         </span>
@@ -270,8 +271,8 @@
                                 <h4 class=" is-3">Time Lapse Setup</h4>
                                 <p>
                                     It takes approximately seven minutes for two people to set up the hardware, which
-                                    consists of three Azure Kinect cameras on tripods connected via cables to each other and a
-                                    laptop each.
+                                    consists of three Azure Kinect cameras on tripods connected via cables to each other
+                                    and a laptop each.
                                 </p>
                                 <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
                                     <source src="./static/videos/Zeitraffer_cut.mp4" type="video/mp4">
@@ -284,15 +285,15 @@
                                 <!-- TODO: Kinect Setup von Notion einpfelgen -->
                                 <h4 class=" is-3">Kinect Setup</h4>
                                 <p>
-                                    The illustration shows the setup of the three Azure Kinect cameras.
-                                    They are connected by two AUX cables. 
-                                    Each from the sync out to the sync in of the next. 
-                                    The camera connected via sync out only is the master, the other two are subs. 
-                                    They are powered and connected to the laptops via the USB-C port.
+                                    The illustration shows the setup of the three Azure Kinect cameras. They are
+                                    connected by two AUX cables. Each from the sync out to the sync in of the next. The
+                                    camera connected via sync out only is the master, the other two are subs. They are
+                                    powered
+                                    and connected to the laptops via the USB-C port.
                                 </p>
                                 <div class="">
-                                    <img src="./static/images/Kinect_Set-Up.jpg"
-                                        alt="Kinect-Set-Up" title="Kinect-Set-Up">
+                                    <img src="./static/images/Kinect_Set-Up.jpg" alt="Kinect-Set-Up"
+                                        title="Kinect-Set-Up">
                                 </div>
                             </div>
                         </div>
@@ -351,16 +352,19 @@
                                 <!-- TODO: Arucu kalibierung einpflegen -->
                                 <h3 class=" is-3">ArUco Marker</h3>
                                 <p>
-                                    An ArUco marker cube (17 cm edge length) with unique IDs on each side is used to 
-                                    calculate the cube's center from the tracked markers in the camera images.
-                                    The cube's center is then set as the scene center for determining camera positions and orientations. 
-                                    Due to marker size and lighting, tracking inaccuracies may occur. 
-                                    Over a ten-second recording at 30 frames per second, up to 300 orientation matrix and position vector results per marker ID are generated. 
-                                    An algorithm compares pairs of detected marker positions, with the median of these comparisons determining the camera position relative to the cube.
+                                    An ArUco marker cube (17 cm edge length) with unique IDs on each side is used to
+                                    calculate the cube's center from the tracked markers in the camera images. The
+                                    cube's center is then set as the scene center for determining camera positions and
+                                    orientations.
+                                    Due to marker size and lighting, tracking inaccuracies may occur. Over a ten-second
+                                    recording at 30 frames per second, up to 300 orientation matrix and position vector
+                                    results per marker ID are generated. An algorithm
+                                    compares pairs of detected marker positions, with the median of these comparisons
+                                    determining the camera position relative to the cube.
                                 </p>
                                 <div class="">
-                                    <img src="./static/images/TrackedMarkers.png"
-                                        alt="ArUco Marker" title="ArUco Marker">
+                                    <img src="./static/images/TrackedMarkers.png" alt="ArUco Marker"
+                                        title="ArUco Marker">
                                 </div>
                             </div>
                         </div>
@@ -370,14 +374,17 @@
                                 <!-- TODO: Charucu Kalibrierung einpflegen -->
                                 <h3 class=" is-3">ChArUco Board</h3>
                                 <p>
-                                    A ChArUco board was also created, printed on an A1 poster. 
-                                    The ArUco markers are 11.2 cm x 11.2 cm, and the chessboard squares are 15 cm x 15 cm. 
-                                    In a ten-second calibration video at 30 frames per second, up to 300 orientation matrices and position vectors are generated. 
-                                    OpenCV outputs a single position, and the median of these results is used to determine the poster's position, which in turn is used to determine the camera position.
+                                    A ChArUco board was also created, printed on an A1 poster. The ArUco markers are
+                                    11.2 cm x 11.2 cm, and the chessboard squares are 15 cm x 15 cm. In a ten-second
+                                    calibration video at 30 frames per second, up to 300 orientation matrices and
+                                    position vectors
+                                    are generated. OpenCV outputs a single position, and the median of these results is
+                                    used to determine the poster's position, which in turn is used to determine the
+                                    camera position.
                                 </p>
                                 <div class="">
-                                    <img src="./static/images/TrackedMarkers_Charuco.png"
-                                        alt="ChArUco Board" title="ChArUco Board">
+                                    <img src="./static/images/TrackedMarkers_Charuco.png" alt="ChArUco Board"
+                                        title="ChArUco Board">
                                 </div>
                             </div>
                         </div>
@@ -391,24 +398,25 @@
                                 <!-- TODO: Post-Processing einpflegen -->
                                 <h3 class=" is-3">From whole room to extracted center</h3>
                                 <p>
-                                    RGB-D data from MKV files are processed with calibration data to form the point cloud. 
-                                    Open3D functions extract the central object or person and DB-Scan selects the largest cluster, typically the desired object. 
-                                    The ground is removed with a surface selection function. 
-                                    These steps isolate the object in the scene, though errors may occur depending on the scene.                                
+                                    RGB-D data from MKV files are processed with calibration data to form the point
+                                    cloud. Open3D functions extract the central object or person and DB-Scan selects the
+                                    largest cluster, typically the desired object. The ground is removed with a surface
+                                    selection
+                                    function. These steps isolate the object in the scene, though errors may occur
+                                    depending on the scene.
                                 </p>
                                 <div class="">
                                     <div class="columns is-centered">
                                         <div class="column">
-                                            <img src="./static/images/Pointcloud_Kinects.png"
-                                            alt="PointCloud" title="PointCloud">
-                                            <img src="./static/images/PlaneSegmentation.png"
-                                            alt="PlaneSegmentation" title="PlaneSegmentation">
+                                            <img src="./static/images/Pointcloud_Kinects.png" alt="PointCloud"
+                                                title="PointCloud">
+                                            <img src="./static/images/PlaneSegmentation.png" alt="PlaneSegmentation"
+                                                title="PlaneSegmentation">
                                         </div>
                                         <div class="column">
-                                            <img src="./static/images/DB_Scan.png"
-                                            alt="DB_Scan" title="DB_Scan">
+                                            <img src="./static/images/DB_Scan.png" alt="DB_Scan" title="DB_Scan">
                                             <img src="./static/images/ExtractetObjectInCenter.png"
-                                            alt="ExtractetObjectInCenter" title="ExtractetObjectInCenter">
+                                                alt="ExtractetObjectInCenter" title="ExtractetObjectInCenter">
                                         </div>
                                     </div>
                                 </div>
@@ -420,13 +428,14 @@
                                 <!-- TODO: Post-Processing einpflegen -->
                                 <h3 class=" is-3"> Combining Point Clouds and Gaussian Splats</h3>
                                 <p>
-                                    To visualize the point clouds, we used Unity with a Gaussian Splat integration to display PLY files. 
-                                    We developed a custom plugin to animate and display point clouds in Unity. 
-                                    The picture below shows the successful combination, featuring the typical appearance of a Gaussian Splat with our point cloud in the center.
+                                    To visualize the point clouds, we used Unity with a Gaussian Splat integration to
+                                    display PLY files. We developed a custom plugin to animate and display point clouds
+                                    in Unity. The picture below shows the successful combination, featuring the typical
+                                    appearance
+                                    of a Gaussian Splat with our point cloud in the center.
                                 </p>
                                 <div class="">
-                                    <img src="./static/images/GS_Unity.png"
-                                        alt="Unity" title="Unity">
+                                    <img src="./static/images/GS_Unity.png" alt="Unity" title="Unity">
                                 </div>
                             </div>
                         </div>
@@ -467,7 +476,7 @@
             <pre>
                             <code>
 @article{brunn2024free3d,
-    author    = {Brunn, Felix and Christmeier, Jan and Häcker, Nick Philipp and Stempfle, Laura Christin and Willmanm, Lukas and Zakowski, Simon and Hahne, Prof. Dr. Uwe},
+    author    = {Brunn, Felix and Christmeier, Jan and Häcker, Nick Philipp and Stempfle, Laura Christin and Willmann, Lukas and Zakowski, Simon and Hahne, Prof. Dr. Uwe},
     title     = {Free3D - Free-viewpoint 3D video creation},
     journal   = {ICCV},
     year      = {2024},

@@ -350,7 +350,7 @@
                                     calculate the cube's center from the tracked markers in the camera images.
                                     The cube's center is then set as the scene center for determining camera positions and orientations. 
                                     Due to marker size and lighting, tracking inaccuracies may occur. 
-                                    Over a ten-second recording at 30 frames per second, 300 orientation matrix and position vector results per marker ID are generated. 
+                                    Over a ten-second recording at 30 frames per second, up to 300 orientation matrix and position vector results per marker ID are generated. 
                                     An algorithm compares pairs of detected marker positions, with the median of these comparisons determining the camera position relative to the cube.
                                 </p>
                                 <div class="">
@@ -367,7 +367,7 @@
                                 <p>
                                     A ChArUco board was also created, printed on an A4 poster. 
                                     The ArUco markers are 11.2 cm x 11.2 cm, and the chessboard squares are 15 cm x 15 cm. 
-                                    In a ten-second calibration video at 30 frames per second, 300 orientation matrices and position vectors are generated. 
+                                    In a ten-second calibration video at 30 frames per second, up to 300 orientation matrices and position vectors are generated. 
                                     OpenCV outputs a single position, and the median of these results is used to determine the poster's position, which in turn is used to determine the camera position.
                                 </p>
                                 <div class="">
@@ -392,10 +392,20 @@
                                     These steps isolate the object in the scene, though errors may occur depending on the scene.                                
                                 </p>
                                 <div class="">
-                                    <img src="./static/images/Pointcloud_Kinects.png"
-                                        alt="PointCloud" title="PointCloud">
-                                    <img src="./static/images/ExtractetObjectInCenter.png"
-                                        alt="ExtractetObjectInCenter" title="ExtractetObjectInCenter">
+                                    <div class="columns is-centered">
+                                        <div class="column">
+                                            <img src="./static/images/Pointcloud_Kinects.png"
+                                            alt="PointCloud" title="PointCloud">
+                                            <img src="./static/images/PlaneSegmentation.png"
+                                            alt="PlaneSegmentation" title="PlaneSegmentation">
+                                        </div>
+                                        <div class="column">
+                                            <img src="./static/images/DB_Scan.png"
+                                            alt="DB_Scan" title="DB_Scan">
+                                            <img src="./static/images/ExtractetObjectInCenter.png"
+                                            alt="ExtractetObjectInCenter" title="ExtractetObjectInCenter">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

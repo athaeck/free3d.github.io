@@ -4,7 +4,7 @@ This is the repository that contains source code for the [Free3D website](https:
 
 # Free3D repositories:
 
-This README contains links to our repositories as well:
+This README contains links to our repositories:
 
 - Our calibration tool: [Calibrator](https://github.com/HFU-DM-free3D/calibrating)
 - Our recording and calibrating middleware synchronised via a network: [Middleware](https://github.com/HFU-DM-free3D/RecorderOperator)

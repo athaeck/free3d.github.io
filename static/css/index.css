@@ -149,6 +149,14 @@ h2 {
     text-align: center;
 }
 
-.ppc {
-    min-height: 54px;
+@media (min-width: 1024px) {
+    .ppc {
+        min-height: 54px;
+    }
+    .hscp {
+        min-height: 120px;
+    }
+    .soscp {
+        min-height: 264px;
+    }
 }

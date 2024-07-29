@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="description"
-        content="This student research project from our university is about recording a full three-dimensional (3D) scene using only three Azure Kinect 3D cameras.">
+        content="This student research project from our university is about recording a full three-dimensional (3D) scene using only three Azure Kinect cameras.">
     <meta name="keywords" content="Gaussian Splatting, Kinect, NeRF">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Free3D - Free-viewpoint 3D video creation</title>
@@ -39,25 +39,6 @@
                         <i class="fas fa-home"></i>
                     </span>
                 </a>
-                <!-- <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">
-                            More Research
-                        </a>
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item" href="https://hypernerf.github.io">
-                                HyperNeRF
-                            </a>
-                            <a class="navbar-item" href="https://nerfies.github.io">
-                                Nerfies
-                            </a>
-                            <a class="navbar-item" href="https://latentfusion.github.io">
-                                LatentFusion
-                            </a>
-                            <a class="navbar-item" href="https://photoshape.github.io">
-                                PhotoShape
-                            </a>
-                        </div>
-                    </div> -->
             </div>
         </div>
     </nav>
@@ -73,7 +54,6 @@
 
                                 ,
                             </span>
-                            <!-- TODO: Jan verknüpfen -->
                             <span class="author-block">
                                 <a href="https://github.com/pretteter">Jan Christmeier</a>
 
@@ -106,14 +86,11 @@
                         </div>
                         <div class="is-size-5 publication-authors">
                             <span class="author-block">
-
-                                Hochschule Furtwangen University,
+                                Hochschule Furtwangen University
                             </span>
                         </div>
                         <div class="column has-text-centered">
                             <div class="publication-links">
-                                <!-- PDF Link. -->
-                                <!-- TODO: Link zum Repo vom Paper hinzufügen also da wo mans PDF sehen kann -->
                                 <span class="link-block">
                                     <a href="./static/paper/Free3D___Free_viewpoint_3D_video_creation.pdf"
                                         class="external-link button is-normal is-rounded is-dark">
@@ -132,24 +109,6 @@
                                         <span>Poster</span>
                                     </a>
                                 </span>
-                                <!-- <span class="link-block">
-                                    <a href="" class="external-link button is-normal is-rounded is-dark">
-                                        <span class="icon">
-                                            <i class="ai ai-arxiv"></i>
-                                        </span>
-                                        <span>arXiv</span>
-                                    </a>
-                                </span> -->
-                                <!-- Video Link. -->
-                                <!-- <span class="link-block">
-                                    <a href="" class="external-link button is-normal is-rounded is-dark">
-                                        <span class="icon">
-                                            <i class="fab fa-youtube"></i>
-                                        </span>
-                                        <span>Video</span>
-                                    </a>
-                                </span> -->
-                                <!-- Code Link. -->
                                 <span class="link-block">
                                     <a href="https://github.com/HFU-DM-free3D/free3d.github.io"
                                         class="external-link button is-normal is-rounded is-dark">
@@ -159,8 +118,6 @@
                                         <span>Code</span>
                                     </a>
                                 </span>
-                                <!-- Dataset Link. -->
-                                <!-- TODO: Link zum Datenset hinzufügen -->
                                 <span class="link-block">
                                     <a href="https://bwsyncandshare.kit.edu/s/etCYZpMDzjfYgza"
                                         class="external-link button is-normal is-rounded is-dark">
@@ -179,7 +136,6 @@
     <section class="hero teaser">
         <div class="container is-max-desktop">
             <div class="hero-body">
-                <!-- TODO: Teaser Video einbauen -->
                 <video id="teaser" autoplay muted loop playsinline height="100%">
                     <source src="./static/videos/free3d-website-teaser-video.mp4" type="video/mp4">
                 </video>
@@ -250,17 +206,7 @@
                     </div>
                 </div>
             </div>
-            <!--/ Abstract. -->
-            <!-- Paper video. -->
-            <!-- <div class="columns is-centered has-text-centered">
-                <div class="column is-four-fifths">
-                    <h2 class="title is-3">Video</h2>
-                    <div class="publication-video">
-                        <iframe src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div> -->
-            <!--/ Paper video. -->
+
         </div>
     </section>
     <section class="section">
@@ -292,7 +238,7 @@
 
                         <div class="column">
                             <div class="content">
-                                <!-- TODO: Kinect Setup von Notion einpfelgen -->
+
                                 <h4 class=" is-3">Kinect Setup</h4>
                                 <p class="hscp">
                                     The illustration shows the setup of the three Azure Kinect cameras. They are
@@ -358,7 +304,7 @@
 
                         <div class="column">
                             <div class="content">
-                                <!-- TODO: Arucu kalibierung einpflegen -->
+
                                 <h3 class=" is-3">ArUco Marker</h3>
                                 <p>
                                     An ArUco marker cube (17 cm edge length) with unique IDs on each side is used to
@@ -380,7 +326,7 @@
 
                         <div class="column">
                             <div class="content">
-                                <!-- TODO: Charucu Kalibrierung einpflegen -->
+
                                 <h3 class=" is-3">ChArUco Board</h3>
                                 <p>
                                     A ChArUco board was also created, printed on an A1 poster. The ArUco markers are
@@ -404,7 +350,7 @@
 
                         <div class="column">
                             <div class="content">
-                                <!-- TODO: Post-Processing einpflegen -->
+
                                 <h3 class="ppc is-3">From whole room to extracted center</h3>
                                 <p>
                                     RGB-D data from MKV files is processed with calibration data to form the point
@@ -434,7 +380,7 @@
 
                         <div class="column">
                             <div class="content">
-                                <!-- TODO: Post-Processing einpflegen -->
+
                                 <h3 class="ppc is-3"> Combining Point Clouds and Gaussian Splats</h3>
                                 <p>
                                     To visualize the point clouds, we used Unity with a Gaussian Splat integration to

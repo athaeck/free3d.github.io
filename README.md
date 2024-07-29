@@ -12,14 +12,7 @@ This README contains links to our repositories:
 
 # Free3D paper:
 
-<!-- [Link to our paper](./static/paper/Free3D___Free_viewpoint_3D_video_creation.pdf)
- -->
-
- <object data="./static/paper/Free3D___Free_viewpoint_3D_video_creation.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="./static/paper/Free3D___Free_viewpoint_3D_video_creation.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="./static/paper/Free3D___Free_viewpoint_3D_video_creation.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+[Link to our paper](./static/paper/Free3D___Free_viewpoint_3D_video_creation.pdf)
 
 # Free3D poster:
 

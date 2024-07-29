@@ -2,6 +2,10 @@
 
 This is the repository that contains source code for the [Free3D website](https://hfu-dm-free3d.github.io/free3d.github.io/).
 
+# Free3D research
+
+[Link to our research](./static/overview/Free3D%20overview.pdf)
+
 # Free3D repositories:
 
 This README contains links to our repositories:

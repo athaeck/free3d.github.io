@@ -10,6 +10,20 @@ This README contains links to our repositories:
 - Our recording and calibrating middleware synchronised via a network: [Middleware](https://github.com/HFU-DM-free3D/RecorderOperator)
 - Our pointcloud and gaussian splat visualiser in Unity: [Gaussian splat visualizer in Unity](https://github.com/HFU-DM-free3D/UnityGaussianSplatting)
 
+# Free3D paper:
+
+<iframe src="./static/paper/Free3D___Free_viewpoint_3D_video_creation.pdf" width="100%" height="1000px">
+Diesen Text sieht man, falls der Browser das iframe-Element nicht unterstützt.
+</iframe>
+
+# Free3D poster:
+
+<div>
+<iframe src="./static/poster/Free3D Poster.pdf" width="841px" height="594px">
+Diesen Text sieht man, falls der Browser das iframe-Element nicht unterstützt.
+</iframe>
+</div>
+
 # BibTex
 
 If you find Free3D useful for your work please cite:

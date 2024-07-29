@@ -12,17 +12,18 @@ This README contains links to our repositories:
 
 # Free3D paper:
 
-<iframe src="./static/paper/Free3D___Free_viewpoint_3D_video_creation.pdf" width="100%" height="1000px">
-Diesen Text sieht man, falls der Browser das iframe-Element nicht unterstützt.
-</iframe>
+<!-- [Link to our paper](./static/paper/Free3D___Free_viewpoint_3D_video_creation.pdf)
+ -->
+
+ <object data="./static/paper/Free3D___Free_viewpoint_3D_video_creation.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="./static/paper/Free3D___Free_viewpoint_3D_video_creation.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="./static/paper/Free3D___Free_viewpoint_3D_video_creation.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
 
 # Free3D poster:
 
-<div>
-<iframe src="./static/poster/Free3D Poster.pdf" width="841px" height="594px">
-Diesen Text sieht man, falls der Browser das iframe-Element nicht unterstützt.
-</iframe>
-</div>
+[Link to our poster](./static/poster/Free3D_Poster.pdf)
 
 # BibTex
 

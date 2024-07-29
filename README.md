@@ -23,7 +23,7 @@ This README contains links to our repositories:
 If you find Free3D useful for your work please cite:
 ```
 @article{brunn2024free3d,
-  author    = {Brunn, Felix and Christmeier, Jan and Häcker, Nick Philipp and Stempfle, Laura Christin and Willmann, Lukas and Zakowski, Simon and Hahne, Prof. Dr. Uwe},
+  author    = {Brunn, Felix and Christmeier, Jan and Häcker, Nick P. and Stempfle, Laura C. and Willmann, Lukas and Zakowski, Simon and Hahne, Prof. Dr. Uwe},
   title     = {Free3D - Free-viewpoint 3D video creation},
   year      = {2024}
 ```

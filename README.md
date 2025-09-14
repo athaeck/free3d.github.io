@@ -1,6 +1,6 @@
 # Free3D
 
-This is the repository that contains source code for the [Free3D website](https://hfu-dm-free3d.github.io/free3d.github.io/).
+This is the repository that contains source code for the [Free3D website](https://athaeck.github.io/free3d.github.io/).
 
 # Free3D research
 
